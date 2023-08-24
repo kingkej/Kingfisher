@@ -182,6 +182,12 @@ extension KFOptionSetter {
         options.onlyFromCache = enabled
         return self
     }
+    
+    /// Sets kingfished to load progressiveJPEG 
+    public func progressiveJPEG(_ progressive: ImageProgressive? = .init()) -> Self {
+        options.progressiveJPEG = progressive
+        return self
+    }
 
     /// Sets whether the image should be decoded in a background thread before using.
     /// - Parameter enabled: Whether the image should be decoded in a background thread before using.
